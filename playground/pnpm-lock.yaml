@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@types/node':
+        specifier: ^24.9.2
+        version: 24.9.2
+      dotenv:
+        specifier: ^17.2.3
+        version: 17.2.3
       openai:
         specifier: ^6.7.0
         version: 6.7.0
@@ -16,6 +22,13 @@ importers:
         version: 1.0.22
 
 packages:
+
+  '@types/node@24.9.2':
+    resolution: {integrity: sha512-uWN8YqxXxqFMX2RqGOrumsKeti4LlmIMIyV0lgut4jx7KQBcBiW6vkDtIBvHnHIquwNfJhk8v2OtmO8zXWHfPA==}
+
+  dotenv@17.2.3:
+    resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
+    engines: {node: '>=12'}
 
   openai@6.7.0:
     resolution: {integrity: sha512-mgSQXa3O/UXTbA8qFzoa7aydbXBJR5dbLQXCRapAOtoNT+v69sLdKMZzgiakpqhclRnhPggPAXoniVGn2kMY2A==}
@@ -32,8 +45,19 @@ packages:
   tiktoken@1.0.22:
     resolution: {integrity: sha512-PKvy1rVF1RibfF3JlXBSP0Jrcw2uq3yXdgcEXtKTYn3QJ/cBRBHDnrJ5jHky+MENZ6DIPwNUGWpkVx+7joCpNA==}
 
+  undici-types@7.16.0:
+    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
+
 snapshots:
+
+  '@types/node@24.9.2':
+    dependencies:
+      undici-types: 7.16.0
+
+  dotenv@17.2.3: {}
 
   openai@6.7.0: {}
 
   tiktoken@1.0.22: {}
+
+  undici-types@7.16.0: {}
